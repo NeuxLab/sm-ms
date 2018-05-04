@@ -1,0 +1,30 @@
+{
+  "name": "sm-ms",
+  "main": "./lib/sm-ms",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [],
+  "repository": "https://github.com/NeuxLab/sm-ms",
+  "license": "MIT",
+  "engines": {
+    "cc": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "request": "^2.85.0",
+    "request-promise-native": "^1.0.5"
+  },
+  "actionProviders": [
+    {
+      "name": "upload to sm.ms",
+      "description": "Upload picture to sm.ms.",
+      "input": "image",
+      "output": "url",
+      "methodName": "upload"
+    }
+  ],
+  "standard": {
+    "globals": [
+      "cc"
+    ]
+  }
+}
